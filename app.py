@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Devarshi05tambulkar@localhost/my_database'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://user:password@localhost/my_database'
 db = SQLAlchemy(app)
 
 class User(db.Model):
